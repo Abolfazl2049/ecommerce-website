@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <div class="modal" id="modal">
+    <button onclick="disappear()"><img src="images/icon-close.svg" alt="" srcset=""></button>
+    <div class="flex-p modal-p " style="max-width: 55vw;margin-inline: auto;">
+      <div class="img-general"><img src="images/image-product-1.jpg" id="p-OO" alt="" srcset=""></div>
+      <div class="navimg">
+        <img src="images/image-product-2.jpg" id="p-11" onclick="myfunction11()" alt="" srcset="">
+        <img src="images/image-product-3.jpg" id="p-22" onclick="myfunction22()" alt="" srcset="">
+        <img src="images/image-product-4.jpg" id="p-33" onclick="myfunction33()" alt="" srcset="">
+        <img src="images/image-product-1.jpg" id="p-44" onclick="myfunction44()" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+  <div id="background">
+    <div id="mobile-menu">
+      <button type="button" class="button-m" onclick="mobileMenuD()"><img src="images/icon-close.svg" alt=""
+          srcset=""></button>
+      <div>Collections</div>
+      <div>men</div>
+      <div>women</div>
+      <div>about</div>
+      <div>contact</div>
+    </div>
+  </div>
+  <button id="trash"><img src="images/icon-delete.svg" alt="" srcset=""></button>
+  <ul>
+    <button class="button-m2" onclick="mobileMenuA()"><img src="images/icon-menu.svg" alt="" srcset=""></button>
+    <li><a href="#home"><img src="images/logo.svg" alt="" srcset=""></a></li>
+    <li class="li-d"><a href="#news">Collections</a></li>
+    <Li class="li-d"><a href="#news">men</a></Li>
+    <Li class="li-d"><a href="#news">Women</a></Li>
+    <Li class="li-d"><a href="#news">About</a></Li>
+    <Li class="li-d"><a href="#news">Contact</a></Li>
+    <li style="float:right;"><a href="#contact" class="active"><img style="width: 40px;bottom: 5px;position: relative;"
+          src="images/image-avatar.png" alt="" srcset=""></a></li>
+    <li style="float:right"><a onclick="CartAppear()" class="active"><img src="images/icon-cart-black.svg" alt=""
+          srcset=""></a></li>
+    <div id="cart-box">
+      <div style="padding: 10px;border-bottom: 1px solid black;">cart </div>
+      <div class="n-2"><img id="imgtum" alt="" srcset="">
+        <p id="pshoe"></p>
+        <p id="buysome">your cart is empty</p>
+        <p id="Tprice"></p>
+      </div>
+      <div>
+        <button id="cart-2">Add to cart</button>
+      </div>
+    </div>
+  </ul>
+
+  <div class="flex">
+    <div class="flex-p">
+      <div class="img-general"><img src="images/image-product-1.jpg" onclick="appear()" id="p-O" alt="" srcset=""></div>
+      <div class="navimg">
+        <img src="images/image-product-2.jpg" id="p-1" onclick="myfunction1()" alt="" srcset="">
+        <img src="images/image-product-3.jpg" id="p-2" onclick="myfunction2()" alt="" srcset="">
+        <img src="images/image-product-4.jpg" id="p-3" onclick="myfunction3()" alt="" srcset="">
+        <img src="images/image-product-1.jpg" id="p-4" onclick="myfunction4()" alt="" srcset="">
+      </div>
+    </div>
+    <div class="flex-t">
+      <div class="part1">
+        <h3>SNEAKER COMPANY</h3>
+        <h1>Fall Limited Edition <br>Sneakers</h1>
+        <p class="main-text">These low-profile snakers are your perfect casual wear
+          <br>companion.Featuring a durable rubber outer sole,theyll
+          <br>withstand everything the weather can offer.
+        </p><br>
+        <b class="r-price">$125.00</b><b class="off">50%</b><br>
+        <del class="p-price">250.00$</del>
+
+      </div>
+      <div class="part2">
+        <div class="pt2-1">
+          <button class="minus" onclick="minus()"><img src="images/icon-minus.svg" alt=""></button>
+          <p id="test">0</p>
+          <button class="plus" onclick="plus()"><img src="images/icon-plus.svg" alt=""></button>
+        </div>
+        <div class="pt2-2">
+          <button class="cart" onclick="cart()"><img src="/images/icon-cart-white.svg" class="img-btn" alt="">Add to
+            cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="script.js">
+
+  </script>
+  </div>
+</body>
+
+</html>
